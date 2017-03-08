@@ -9,10 +9,11 @@ public class PlayerMovement : MonoBehaviour {
     public float minSpeed = 3;
     public float normalSpeed = 5;
 
-    private Rigidbody rb; 
+    private Rigidbody rb;
 	
 	void Start ()
     {
+        
         rb = GetComponent<Rigidbody>();
         speed = normalSpeed;
 	}
