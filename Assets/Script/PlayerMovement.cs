@@ -7,19 +7,21 @@ public class PlayerMovement : MonoBehaviour {
     public float speed = 5;
     public float maxSpeed = 10;
     public float minSpeed = 3;
+    public float normalSpeed = 5;
 
     private Rigidbody rb; 
 	
 	void Start ()
     {
         rb = GetComponent<Rigidbody>();
+        speed = normalSpeed;
 	}
 
     void Update()
     {
-        if (Input.GetButton("Fire1")) Run();
-        if (Input.GetButton("Fire2")) Slow();
-        if (Input.GetButtonUp("Fire1") || Input.GetButtonUp("Fire2")) speed = 5;
+        if (Input.GetButton("Fire1")) speed = maxSpeed;
+        if (Input.GetButton("Fire2")) speed = minSpeed;
+        if (Input.GetButtonUp("Fire1") || Input.GetButtonUp("Fire2")) speed = normalSpeed;
 
 
     }
@@ -34,13 +36,4 @@ public class PlayerMovement : MonoBehaviour {
         rb.velocity = movement * speed;	
 	}
 
-    void Run()
-    {
-        speed = maxSpeed;
-    }
-
-    void Slow()
-    {
-        speed = minSpeed;
-    }
 }

@@ -17,7 +17,7 @@ public class ChangeMaterial : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        sif (other.tag == "Player") other.material = ren.material;
+       
     }
 
 
