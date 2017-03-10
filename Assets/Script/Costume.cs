@@ -12,6 +12,7 @@ public class Costume : MonoBehaviour {
     void Start()
     {
         ren = GetComponent<Renderer>();
+        costume.Add(ren.material);
     }
 
     void Update()
@@ -19,7 +20,7 @@ public class Costume : MonoBehaviour {
         if (Input.GetKeyDown("e"))
         {
             i++;
-            if (i > costume.Count) i = costume.Count - 1;
+            if (i >= costume.Count - 1) i = costume.Count - 1;
             ren.material = (Material)costume[i];
         }
         if (Input.GetKeyDown("q"))

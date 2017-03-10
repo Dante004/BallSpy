@@ -77,6 +77,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\ChangeMaterial.cs" />
     <Compile Include="Assets\Script\Costume.cs" />
+    <Compile Include="Assets\Script\HUD\Costume_UI.cs" />
     <Compile Include="Assets\Script\PlayerMovement.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

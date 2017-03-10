@@ -19,7 +19,7 @@ public class ChangeMaterial : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
         costume.costume.Add(mat);
-        costume.ren.material = mat;
+        Destroy(gameObject);
     }
 
 
