@@ -11,15 +11,15 @@ public class ChangeMaterial : MonoBehaviour {
 
     private void Start()
     {
-        costume = GameObject.FindGameObjectWithTag("Player").GetComponent<Costume>();
+        costume = GameObject.FindGameObjectWithTag("Player").GetComponent<Costume>(); // dostep do komponetyów Playera
         ren = GetComponent<Renderer>();
         ren.enabled = true;
     }
 
     void OnTriggerEnter(Collider other)
     {
-        costume.costume.Add(mat);
-        Destroy(gameObject);
+        costume.costume.Add(mat); //dodane przebranie do puli mozliwych do wyboru
+        Destroy(gameObject); //zniszczenie obiektu który daje nam nowe przebranie
     }
 
 

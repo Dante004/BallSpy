@@ -11,11 +11,12 @@ public class Costume : MonoBehaviour {
     void Start()
     {
         ren = GetComponent<Renderer>();
-        costume.Add(ren.material);
+        costume.Add(ren.material); // dodanie dopmyslnego przebranie do puli mozliwych do wyboru
     }
 
     void Update()
     {
+        //wybieranie przebrania
         if (Input.GetKeyDown("e"))
         {
             i++;
