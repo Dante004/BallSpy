@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BallSpy", "BallSpy.csproj", "{89B25AE4-F23A-F6F6-5A71-4F7A6767564C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BallSpy.Editor", "BallSpy.Editor.csproj", "{A4A4FCE2-DF51-0137-402C-3FD1EB7FCAE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{89B25AE4-F23A-F6F6-5A71-4F7A6767564C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89B25AE4-F23A-F6F6-5A71-4F7A6767564C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89B25AE4-F23A-F6F6-5A71-4F7A6767564C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4A4FCE2-DF51-0137-402C-3FD1EB7FCAE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A4FCE2-DF51-0137-402C-3FD1EB7FCAE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A4FCE2-DF51-0137-402C-3FD1EB7FCAE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A4FCE2-DF51-0137-402C-3FD1EB7FCAE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

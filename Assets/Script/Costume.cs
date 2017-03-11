@@ -6,7 +6,6 @@ public class Costume : MonoBehaviour {
 
     public Renderer ren;
     public ArrayList costume = new ArrayList();
-
     public int i = 0;
 
     void Start()

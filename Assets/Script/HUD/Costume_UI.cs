@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Costume_UI : MonoBehaviour {
 
-    public ArrayList costume = new ArrayList();
+    
 
 
 }
