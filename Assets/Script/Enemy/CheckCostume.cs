@@ -21,7 +21,7 @@ public class CheckCostume : MonoBehaviour {
         }
         else
         {
-            Debug.Log("Przeciwnik znalazł gracza");
+            Time.timeScale = 0;
         }
     }
 
