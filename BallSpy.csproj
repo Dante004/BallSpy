@@ -78,8 +78,9 @@
     <Compile Include="Assets\Script\CameraController.cs" />
     <Compile Include="Assets\Script\ChangeMaterial.cs" />
     <Compile Include="Assets\Script\Costume.cs" />
-    <Compile Include="Assets\Script\Eney\EnemyMovement.cs" />
-    <Compile Include="Assets\Script\Eney\FieldofView.cs" />
+    <Compile Include="Assets\Script\Enemy\CheckCostume.cs" />
+    <Compile Include="Assets\Script\Enemy\EnemyMovement.cs" />
+    <Compile Include="Assets\Script\Enemy\FieldofView.cs" />
     <Compile Include="Assets\Script\HUD\Costume_UI.cs" />
     <Compile Include="Assets\Script\PlayerMovement.cs" />
   </ItemGroup>
