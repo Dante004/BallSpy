@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour {
     public float maxSpeed = 10;
     public float minSpeed = 3;
     public float normalSpeed = 5;
+    public bool move = false;
 
     private Rigidbody rb;
 	
@@ -32,9 +33,22 @@ public class PlayerMovement : MonoBehaviour {
     {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
+        Move(h, v);
 
         Vector3 movement = new Vector3(h, 0, v);
-        rb.velocity = movement * speed;	
-	}
+        rb.velocity = movement * speed;
+    }
 
+    public void Move(float h, float v)
+    {
+        if (h == 1 || v == 1 || h==-1 || v==-1)
+        {
+            move = true;
+        }
+        else
+        {
+            move = false;
+        }
+        
+    }
 }
